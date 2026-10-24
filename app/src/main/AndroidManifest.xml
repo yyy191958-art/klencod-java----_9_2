@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔥 AZ TOOLS WORLDWIDE 🔥"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📢 اشتراك إجباري بقناة التليجرام"
+        android:backgroundTint="#0284C7"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اختر الأداة المطلوبة:"
+        android:textColor="#38BDF8"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTools"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1E293B"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etChatId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="أدخل Chat ID الخاص بك..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#64748B"
+        android:background="#1E293B"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etToken"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="أدخل Bot Token..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#64748B"
+        android:background="#1E293B"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶ بدأ تشغيل الأداة"
+        android:backgroundTint="#10B981"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سجل التشغيل المباشر للأدوات:"
+        android:textColor="#38BDF8"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E293B"
+        android:padding="10dp">
+        
+        <TextView
+            android:id="@+id/tvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[*] التطبيق جاهز للتشغيل...\n"
+            android:textColor="#38BDF8"
+            android:fontFamily="monospace"
+            android:textSize="12sp"/>
+            
+    </ScrollView>
+
+</LinearLayout>
